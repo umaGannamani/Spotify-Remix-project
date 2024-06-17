@@ -24,26 +24,26 @@ const AudioPlayer = props => {
   }
 
   const playerSection = () => (
-    <div className="player-section">
+    <div className='player-section'>
       <audio
         ref={audioPlayer}
         src={previewUrl}
-        preload="metadata"
+        preload='metadata'
         controls
-        className="music-player"
+        className='music-player'
       >
-        <track kind="captions" srcLang="en" />
+        <track kind='captions' srcLang='en' />
       </audio>
     </div>
   )
 
   return (
-    <div className="player-container">
-      <div className="left-section">
-        <img src={imgSrc} alt={trackName} className="song-image" />
-        <div className="song-details">
-          <h5 className="song-name">{trackName}</h5>
-          <p className="song-artist">{artist}</p>
+    <div className='player-container'>
+      <div className='left-section'>
+        <img src={imgSrc} alt={trackName} className='song-image' />
+        <div className='song-details'>
+          <h5 className='song-name'>{trackName}</h5>
+          <p className='song-artist'>{artist}</p>
         </div>
       </div>
       {previewUrl !== undefined ? (
@@ -51,7 +51,7 @@ const AudioPlayer = props => {
       ) : (
         <p>Can not play the song</p>
       )}
-      <button type="button" className="play-pause-btn" onClick={togglePlay}>
+      <button type='button' className='play-pause-btn' onClick={togglePlay}>
         {!isPlaying ? <FaPlay /> : <FaPause />}
       </button>
     </div>

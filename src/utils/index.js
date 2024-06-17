@@ -89,7 +89,7 @@ export const modifyGenreAndMoods = data => ({
 // Function to modify the response of SpecificPlaylists.
 export const modifyPlaylistData = data => ({
   id: data.id,
-  name: changeName(data.name),
+  name: data.name,
   image: data.images[0].url,
   artist: data.tracks.items[0].track.artists[0].name,
   description: data.description,
@@ -102,7 +102,7 @@ export const modifyPlaylistData = data => ({
         ? song.track.album.images[0].url
         : 'https://i.scdn.co/image/ab67706f0000000366c4920349468f0970205a6a',
     trackId: song.track.id,
-    trackName: changeName(song.track.name),
+    trackName: song.track.name,
     popularity: song.track.popularity,
     previewUrl: song.track.preview_url,
     addedAt: findDistanceFromNow(song.added_at),

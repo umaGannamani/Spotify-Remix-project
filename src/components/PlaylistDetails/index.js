@@ -61,7 +61,7 @@ class PlaylistDetails extends Component {
   // JSX to display Playlist title and cover image.
   playlistsHeader = () => {
     const {playlists} = this.state
-    const {image, name, artist, description} = playlists
+    const {image, name, description} = playlists
     // TODO: removed description to beautify.
 
     return (
@@ -73,7 +73,6 @@ class PlaylistDetails extends Component {
           <div className="playlist-details">
             <p className="playlist-type">Editor&#39;s Picks</p>
             <h2 className="playlist-name">{name}</h2>
-            <p className="playlist-artist">{artist}</p>
           </div>
         </div>
         <p className="playlist-artist">{description}</p>

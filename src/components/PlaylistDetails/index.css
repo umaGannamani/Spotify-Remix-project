@@ -141,12 +141,12 @@
 }
 @media (max-width: 767px) {
   .track-headings {
-    display: none;
+    display: flex;
   }
   .playlist-heading-item {
-    display: none;
+    display: flex;
   }
   .line {
-    display: none;
+    display: flex;
   }
 }
